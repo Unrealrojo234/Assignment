@@ -10,7 +10,7 @@
 ### Clonning this repo
 
 ```bash
-git clone "https://github.com/Unrealrojo234/Assignment";
+git clone "https://github.com/Unrealrojo234/Assignment"
 ```
 
 <p>After cloning this repo navigate to its directory and enter the following commands</p>
