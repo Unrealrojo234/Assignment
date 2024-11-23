@@ -16,7 +16,7 @@ int Circle()
 
     double answer = (PI * radius * radius);
 
-    printf("\nAnswer: %.2f\n", answer);
+    printf("\n\033[38;5;112mAnswer: %.2f\033[0m\n", answer);
 };
 
 // calcaulation of surface area of a sphere
@@ -30,7 +30,7 @@ int SurfaceAreaOfSphere()
 
     double answer = (4 * PI * radius * radius);
 
-    printf("\nAnswer: %.2f\n", answer);
+    printf("\n\033[38;5;112mAnswer: %.2f\033[0m\n", answer);
 };
 
 // Calculation of displacement of a projectile
@@ -57,7 +57,7 @@ int DisplacementOfProjectile()
 
     double answer = (u * t + 0.5 * a * t * t);
 
-    printf("\nAnswer: %.2f\n", answer);
+    printf("\n\033[38;5;112mAnswer: %.2f\033[0m\n", answer);
 };
 
 int RealRootsOfQuadraticEquation()
@@ -83,13 +83,13 @@ int RealRootsOfQuadraticEquation()
 
     root2 = ((-b - (sqrt(b * b - 4 * a * c))) / 2);
 
-    printf("\nAnswers\n\nX = %.2f\nX = %.2f\n", root1, root2);
+    printf("\n\033[38;5;112mAnswers:\n\nX = %.2f\nX = %.2f\033[0m\n", root1, root2);
 };
 
 int main()
 {
     // Title of program
-    const char title[] = "CALCULATE:";
+    const char title[] = "\033[1;33m\033[4mCALCULATE:\033[0m";
 
     // Displaying the title
     printf("\n%s\n", title);
@@ -106,31 +106,31 @@ int main()
     // Getting selected option from  user
     int selected; // Varable for holding slected option
 
-    printf("\nSELECT OPTION: ");
+    printf("\n\033[38;5;188mSELECT OPTION: ");
 
-    scanf("%d", &selected);
+    scanf("%d\033[0m\n", &selected);
 
     switch (selected)
     {
     case 1:
-        printf("\n%s\n", option1);
+        printf("\n\033[36m\033[1m\033[4m%s\033[0m\n", option1);
         Circle();
         break;
     case 2:
-        printf("\n%s\n", option2);
+        printf("\n\033[36m\033[1m\033[4m%s\033[0m\n", option2);
         SurfaceAreaOfSphere();
         break;
     case 3:
-        printf("\n%s\n", option3);
+        printf("\n\033[36m\033[1m\033[4m%s\033[0m\n", option3);
         DisplacementOfProjectile();
         break;
     case 4:
-        printf("\n%s\n", option4);
+        printf("\n\033[36m\033[1m\033[4m%s\033[0m\n", option4);
         RealRootsOfQuadraticEquation();
         break;
 
     default:
-        printf("\nInvalid input\n");
+        printf("\n\033[31mInvalid input\033[0m\n");
         break;
     }
 
